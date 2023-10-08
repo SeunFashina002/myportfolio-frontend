@@ -44,7 +44,7 @@ const Project = (props) => {
                       {name}
                     </h1>
                   </a>
-                  <a href={code} target="_blank" rel="noreferrer">
+                  <a href={live} target="_blank" rel="noreferrer">
                     <p className="w-full text-sm duration-500  hover:text-blue-600 hover:decoration-4 dark:text-slate-300">
                       {description}
                     </p>
