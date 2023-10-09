@@ -3,16 +3,16 @@ import dataFinance from "../assets/dataFinance.png";
 
 const articles = [
   {
-    id: 7,
-    src: todoApp,
+    id: 1,
+    src: "https://cdn.hashnode.com/res/hashnode/image/upload/v1690153463540/1d312221-bcd2-4500-9fc9-d03414d197bf.png",
     demo: "https://todo-app-bahkho.vercel.app/",
     code: "https://github.com/Bahkho/Todo-App.git",
     title:
       "Exploring Django ViewSets: Simplifying API Development and Enhancing Code Reusability",
   },
   {
-    id: 4,
-    src: dataFinance,
+    id: 2,
+    src: "https://cdn.hashnode.com/res/hashnode/image/upload/v1690500358335/53e68627-bfc5-4882-8c8c-6f82d11ee00b.png",
     demo: "https://data-finance-01.netlify.app/",
     code: "https://github.com/Bahkho/React-Tailwind.git",
     title: "Building and Publishing packages in Python",

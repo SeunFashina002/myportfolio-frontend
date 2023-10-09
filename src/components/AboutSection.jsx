@@ -6,8 +6,8 @@ export default function About({ mode }) {
           About
         </h2>
         <p>
-          As a Python backend developer, I have a passion for building robust
-          and scalable applications that can handle large amounts of data and
+          As backend developer, I have a passion for building robust and
+          scalable applications that can handle large amounts of data and
           traffic. However, I also have experience in frontend development,
           including HTML, CSS, and JavaScript, as well as modern frameworks like
           React.
