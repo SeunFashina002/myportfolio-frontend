@@ -14,7 +14,7 @@ const links = [
         Linkedin
       </>
     ),
-    href: "https://www.linkedin.com/in/seun-fashina-7b6b01232/",
+    href: "https://www.linkedin.com/in/oluwaseun-fashina-7b6b01232/",
     style: "rounded-tr-md",
   },
   {
@@ -45,7 +45,7 @@ const links = [
         Whatsapp
       </>
     ),
-    href: "https://wa.me/08075422354",
+    href: "https://wa.me/+2348075422354",
     style: "rounded-br-md",
   },
 ];
