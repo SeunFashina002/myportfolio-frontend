@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-// import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 import logo from "../assets/icon.png";
 

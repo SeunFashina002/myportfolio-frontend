@@ -1,5 +1,3 @@
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-
 import { RESUME_URL } from "../constants/resume_url";
 import { Link } from "react-scroll";
 export default function Hero({ mode }) {

@@ -1,20 +1,15 @@
-import todoApp from "../assets/todo-app.png";
-import dataFinance from "../assets/dataFinance.png";
-
 const articles = [
   {
     id: 1,
     src: "https://cdn.hashnode.com/res/hashnode/image/upload/v1690153463540/1d312221-bcd2-4500-9fc9-d03414d197bf.png",
-    demo: "https://todo-app-bahkho.vercel.app/",
-    code: "https://github.com/Bahkho/Todo-App.git",
+    url: "https://seunfashina.hashnode.dev/exploring-django-viewsets-simplifying-api-development-and-enhancing-code-reusability",
     title:
       "Exploring Django ViewSets: Simplifying API Development and Enhancing Code Reusability",
   },
   {
     id: 2,
     src: "https://cdn.hashnode.com/res/hashnode/image/upload/v1690500358335/53e68627-bfc5-4882-8c8c-6f82d11ee00b.png",
-    demo: "https://data-finance-01.netlify.app/",
-    code: "https://github.com/Bahkho/React-Tailwind.git",
+    url: "https://seunfashina.hashnode.dev/building-and-publishing-packages-in-python",
     title: "Building and Publishing packages in Python",
   },
 ];
@@ -32,7 +27,7 @@ const Articles = ({ mode }) => {
           </div>
 
           <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 ">
-            {articles.map(({ id, src, demo, code, title }) => (
+            {articles.map(({ id, src, url, title }) => (
               <div key={id}>
                 <div className="rounded-lg">
                   <img
@@ -42,7 +37,7 @@ const Articles = ({ mode }) => {
                   />
                 </div>
                 <div className="flex flex-col justify-center py-3">
-                  <a href={demo} target="_blank" rel="noreferrer">
+                  <a href={url} target="_blank" rel="noreferrer">
                     <h1 className="w-full font-bold text-2xl duration-500 dark:text-gray-300 hover:dark:text-blue-500">
                       {title}
                     </h1>
@@ -51,9 +46,15 @@ const Articles = ({ mode }) => {
               </div>
             ))}
           </div>
-          <button className="w-1/2 md:w-1/4 rounded-md p-4 hover:scale-110 duration-300 bg-blue-500 dark:bg-blue-600 text-white text-left font-semibold text-md my-6">
-            Read the blog 🚀
-          </button>
+          <a
+            href="https://seunfashina.hashnode.dev/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="w-1/2 md:w-1/4 rounded-md p-4 hover:scale-110 duration-300 bg-blue-500 dark:bg-blue-600 text-white text-left font-semibold text-md my-6">
+              Read the blog 🚀
+            </button>
+          </a>
         </div>
       </div>
     </div>

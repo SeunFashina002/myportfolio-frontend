@@ -5,10 +5,8 @@ import About from "./components/AboutSection";
 import OtherProjects from "./components/OtherProjects";
 import Articles from "./components/ArticleSection.jsx";
 import Contact from "./components/ContactMe";
-import SocialLinks from "./components/SocialLinks";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
-// import Contact from "./components/Contact";
 import BackToTopButton from "./components/BackToTopButton";
 
 export default function App() {
@@ -30,11 +28,7 @@ export default function App() {
       <Skills mode={theme} />
       <Articles mode={theme} />
       <Contact mode={theme} />
-      {/* <SocialLinks mode={theme} />
-      <Project mode={theme} />
-      <Skills mode={theme} />
-      <Contact mode={theme} />
-      <BackToTopButton mode={theme} /> */}
+      <BackToTopButton mode={theme} />
     </div>
   );
 }

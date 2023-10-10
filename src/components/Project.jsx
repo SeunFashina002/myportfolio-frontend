@@ -28,29 +28,28 @@ const Project = (props) => {
 
           <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-0">
             {projects.map(({ id, src, name, description, live, code }) => (
-              <div
-                key={id}
-                className=" shadow-lg shadow-[#e2e8f0] dark:shadow-gray-600 rounded-lg"
-              >
-                <img
-                  src={src}
-                  alt="/"
-                  className={`rounded-md duration-200 md:hover:scale-105 w-[700px] h-[300px]`}
-                />
+              <a href={live} target="_blank" rel="noreferrer">
+                <div
+                  key={id}
+                  className=" shadow-lg shadow-[#e2e8f0] dark:shadow-gray-600 rounded-lg"
+                >
+                  <img
+                    src={src}
+                    alt="/"
+                    className={`rounded-md duration-200 md:hover:scale-105 w-[700px] h-[300px]`}
+                  />
 
-                <div className="flex flex-col justify-center p-3">
-                  <a href={live} target="_blank" rel="noreferrer">
+                  <div className="flex flex-col justify-center p-3">
                     <h1 className="w-full font-bold text-2xl duration-500 dark:text-gray-300 md:hover:dark:text-blue-500">
                       {name}
                     </h1>
-                  </a>
-                  <a href={live} target="_blank" rel="noreferrer">
+
                     <p className="w-full text-sm duration-500  hover:text-blue-600 hover:decoration-4 dark:text-slate-300">
                       {description}
                     </p>
-                  </a>
+                  </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

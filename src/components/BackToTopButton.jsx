@@ -13,7 +13,6 @@ const BackToTopButton = (props) => {
             justifyContent: "center",
             alignItems: "center",
           }}
-          // color={props.mode ? "#000" : "#fff"}
           className="bg-gradient-to-tr from-teal-600 to-cyan-600 "
         />
       </div>
