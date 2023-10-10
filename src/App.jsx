@@ -4,7 +4,7 @@ import Hero from "./components/HeroSection";
 import About from "./components/AboutSection";
 import OtherProjects from "./components/OtherProjects";
 import Articles from "./components/ArticleSection.jsx";
-import Contact from "./components/ContactMe";
+import Contact from "./components/Contact";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
 import BackToTopButton from "./components/BackToTopButton";

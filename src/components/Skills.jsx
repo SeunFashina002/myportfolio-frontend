@@ -46,32 +46,32 @@ const Skills = (props) => {
       style: "shadow-blue-700",
     },
     {
-      id: 4,
+      id: 8,
       src: next,
       paragraph: "Next JS",
       style: "shadow-slate-500",
     },
 
     {
-      id: 6,
+      id: 9,
       src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/react-js-icon.svg",
       paragraph: "React JS",
       style: "shadow-sky-500",
     },
     {
-      id: 5,
+      id: 10,
       src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.svg",
       paragraph: "Tailwind CSS",
       style: "shadow-cyan-500",
     },
     {
-      id: 1,
+      id: 11,
       src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.svg",
       paragraph: "HTML",
       style: "shadow-orange-500",
     },
     {
-      id: 2,
+      id: 12,
       src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.svg",
       paragraph: "CSS",
       style: "shadow-blue-500",

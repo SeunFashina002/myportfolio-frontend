@@ -28,11 +28,8 @@ const Project = (props) => {
 
           <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-0">
             {projects.map(({ id, src, name, description, live, code }) => (
-              <a href={live} target="_blank" rel="noreferrer">
-                <div
-                  key={id}
-                  className=" shadow-lg shadow-[#e2e8f0] dark:shadow-gray-600 rounded-lg"
-                >
+              <a key={id} href={live} target="_blank" rel="noreferrer">
+                <div className=" shadow-lg shadow-[#e2e8f0] dark:shadow-gray-600 rounded-lg">
                   <img
                     src={src}
                     alt="/"

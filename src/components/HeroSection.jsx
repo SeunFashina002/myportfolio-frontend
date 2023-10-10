@@ -27,8 +27,8 @@ export default function Hero({ mode }) {
           </button>
         </a>
         <Link
-          to="/contact"
-          className="md:w-1/3  py-3 rounded-3xl md:hover:scale-110 duration-300 bg-blue-500 dark:bg-blue-600"
+          to="contact"
+          className="md:w-1/3 py-3 rounded-3xl md:hover:scale-110 duration-300 bg-blue-500 dark:bg-blue-600"
         >
           <button className="w-full text-white">Contact Me</button>
         </Link>

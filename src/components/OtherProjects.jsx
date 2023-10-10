@@ -53,7 +53,10 @@ const OtherProjects = ({ mode }) => {
       >
         {projects.map(({ id, name, description, live, github, stack }) => {
           return (
-            <div className="flex flex-col p-3 card outline outline-none shadow-md shadow-slate-400 rounded-sm dark:outline-slate-400 h-40 w-96 dark:rounded-sm dark:shadow-none justify-between hover:dark:outline-blue-500 md:hover:scale-110 duration-150">
+            <div
+              key={id}
+              className="flex flex-col p-3 card outline outline-none shadow-md shadow-slate-400 rounded-sm dark:outline-slate-400 h-40 w-96 dark:rounded-sm dark:shadow-none justify-between hover:dark:outline-blue-500 md:hover:scale-110 duration-150"
+            >
               <h1 className="font-bold dark:text-slate-300 text-2xl">{name}</h1>
               <p className="dark:text-slate-100 text-sm">{description}</p>
               <div className="flex justify-between items-center">
