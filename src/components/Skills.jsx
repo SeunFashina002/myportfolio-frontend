@@ -86,7 +86,7 @@ const Skills = (props) => {
             <p className="md:text-5xl text-4xl font-bold mt-12  dark:text-slate-300 bg-clip-text">
               Skills
             </p>
-            <p className="py-6">These are the technologies I've work with 🛠️</p>
+            <p className="py-6">These are the technologies I've worked with 🛠️</p>
           </div>
 
           <div className=" w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 text-center py-8 gap-8 ">
