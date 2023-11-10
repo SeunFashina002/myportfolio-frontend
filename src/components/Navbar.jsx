@@ -59,7 +59,7 @@ const Navbar = (props) => {
             />
             <h1 className=" font-medium text-3xl ">
               Se
-              <span className=" bg-gradient-to-tr from-teal-600 to-cyan-600 text-transparent bg-clip-text">
+              <span className="text-[#0284c7] bg-clip-text">
                 un
               </span>
             </h1>
