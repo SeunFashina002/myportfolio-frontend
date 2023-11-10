@@ -7,9 +7,9 @@ const Project = (props) => {
     {
       id: 1,
       src: linkzen,
-      name: "Linkzen",
+      name: "LINKZEN (SaaS)",
       description:
-        "My friend, Kelvin and I are currently working on this project",
+        "My friend, Kelvin and I are currently working on this product. It is a link and file management tool.",
       live: "https://linkzen.vercel.app/",
       code: "",
     },
