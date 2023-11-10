@@ -35,7 +35,7 @@ const projects = [
     id: 4,
     name: "DSA",
     description:
-      "This project contains solutions to tons of problem statements using python and javascript",
+      "will be updating this with solutions to tons of DSA problem statements using python and javascript",
     live: "",
     github: "https://github.com/SeunFashina002/100Days-of-DSA",
     stack: "javascript",
