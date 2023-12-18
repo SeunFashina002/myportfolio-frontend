@@ -15,6 +15,15 @@ const projects = [
   },
   {
     id: 2,
+    name: "MediTrak API",
+    description:
+      "Meditrak is an app that helps medically challenged individuals to track their drug usage reducing the risk of skipping medication",
+    live: "https://meditrak.onrender.com",
+    github: "https://github.com/MediTrak/MediTrak_backend",
+    stack: "javascript",
+  },
+  {
+    id: 3,
     name: "Joolba API",
     description:
       "Joolba is an open source blogging platform. I singled handedly worked on the entire auth flow of the api.",
@@ -23,7 +32,7 @@ const projects = [
     stack: "python",
   },
   {
-    id: 3,
+    id: 4,
     name: "Job board API",
     description:
       "This is an API that allows authenticated users to create or post, update, delete jobs",
@@ -32,7 +41,7 @@ const projects = [
     stack: "javascript",
   },
   {
-    id: 4,
+    id: 5,
     name: "DSA",
     description:
       "will be updating this with solutions to tons of DSA problem statements using python and javascript",
