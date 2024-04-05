@@ -9,11 +9,11 @@ export default function Hero({ mode }) {
         My name is Seun, I am a
         <span className="text-4xl text-[#0284c7] font-bold md:text-8xl">
           {" "}
-          Backend Developer
+          Software Engineer
         </span>
       </h1>
       <p className="body dark:text-white">
-        I am a backend developer eager to contribute to team success through
+        I am a software engineer eager to contribute to team success through
         hard work, attention to detail, and excellent organizational skills.
       </p>
       <div className="btns flex flex-col md:flex-row md:items-center md:justify-center md:gap-2 w-full p-3">

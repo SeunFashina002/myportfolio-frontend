@@ -23,7 +23,7 @@ const Articles = ({ mode }) => {
             <p className="md:text-5xl text-4xl font-bold mt-12  dark:text-slate-300 bg-clip-text">
               Articles
             </p>
-            <p className="py-6">Some of my technical articles ✨</p>
+            <p className="py-6">Check out some of my technical articles ✨</p>
           </div>
 
           <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 ">

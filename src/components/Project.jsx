@@ -2,22 +2,53 @@ import React from "react";
 
 import linkzen from "../assets/linkzen.jpeg";
 import promise from "../assets/promise-me.png";
+import natalbond from "../assets/natalbond.png";
+import raize from "../assets/raize.png";
+import community from "../assets/community.png";
 
 const Project = (props) => {
   const projects = [
     {
       id: 1,
-      src: linkzen,
-      name: "LINKZEN (SaaS)",
+      src: raize,
+      name: "Raize App (Bank for the unbanked)",
       description:
-        "My friend, Kelvin and I are currently working on this product. It is a link and file management tool.",
-      live: "https://linkzen.vercel.app/",
+        "A fintech app that allow users make payment transactions with the use of pay-codes",
+      live: "https://play.google.com/store/apps/details?id=co.raize",
       code: "",
     },
     {
       id: 2,
+      src: natalbond,
+      name: "Natalbond health",
+      description:
+        "Natalbond is designed to enhance the health life of women in their reproductive or motherhood stage.",
+      live: "https://natalbond.com",
+      code: "",
+    },
+    {
+      id: 3,
+      src: linkzen,
+      name: "LINKZEN (SaaS)",
+      description:
+        "My friend, Kelvin and I are currently working on this product. It is a link and file management tool.",
+      live: "https://linkzen-git-dev-cyphermoon.vercel.app/",
+      code: "",
+    },
+    {
+      id: 4,
       src: promise,
       name: "Promise Me (In Development)",
+      description:
+        "A digital promise card that allow users to create a list of gift items they desire and share it with their loved ones.",
+      live: "https://promise-me.vercel.app/",
+      code: "https://github.com/SeunFashina002/promise-card",
+    },
+
+    {
+      id: 5,
+      src: community,
+      name: "Community chat app",
       description:
         "A digital promise card that allow users to create a list of gift items they desire and share it with their loved ones.",
       live: "https://promise-me.vercel.app/",
@@ -33,7 +64,11 @@ const Project = (props) => {
             <p className="md:text-5xl text-4xl font-bold mt-12 dark:text-slate-300 bg-clip-text">
               Projects
             </p>
-            <p className="py-6">Check out some of my works right here 👨🏿‍💻</p>
+            <p className="py-6">
+              Check out some of the projects I have worked on👨🏿‍💻
+              <br />
+              Includes personal and non-personal projects.
+            </p>
           </div>
 
           <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-0">
