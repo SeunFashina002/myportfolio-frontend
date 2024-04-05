@@ -41,7 +41,7 @@ const Project = (props) => {
       name: "Promise Me (In Development)",
       description:
         "A digital promise card that allow users to create a list of gift items they desire and share it with their loved ones.",
-      live: "https://promise-me.vercel.app/",
+      live: "https://promisecard.netlify.app/",
       code: "https://github.com/SeunFashina002/promise-card",
     },
 
@@ -51,7 +51,7 @@ const Project = (props) => {
       name: "Community chat app",
       description:
         "A digital promise card that allow users to create a list of gift items they desire and share it with their loved ones.",
-      live: "https://promisecard.netlify.app/",
+      live: "https://pontypridd.vercel.app/",
       code: "https://github.com/SeunFashina002/promise-card",
     },
   ];
