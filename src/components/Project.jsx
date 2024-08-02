@@ -5,6 +5,7 @@ import promise from "../assets/promise-me.png";
 import natalbond from "../assets/natalbond.png";
 import raize from "../assets/raize.png";
 import community from "../assets/community.png";
+import rentville from "../assets/rentville.png";
 
 const Project = (props) => {
   const projects = [
@@ -13,7 +14,7 @@ const Project = (props) => {
       src: raize,
       name: "Raize App (Bank for the unbanked)",
       description:
-        "A fintech app that allow users make payment transactions with the use of pay-codes",
+        "A fintech app that allow users make payment transactions with the use of pay-codes.",
       live: "https://play.google.com/store/apps/details?id=co.raize",
       code: "",
     },
@@ -28,6 +29,24 @@ const Project = (props) => {
     },
     {
       id: 3,
+      src: rentville,
+      name: "RentVille",
+      description:
+        "RentVille helps university students find and rent apartments easily and securely through verified agents.",
+      live: "https://rentville.ng",
+      code: "",
+    },
+    {
+      id: 4,
+      src: community,
+      name: "Community chat app",
+      description:
+        "This chat app was designed to foster effective communication and accountability among a group of related people.",
+      live: "https://pontypridd.vercel.app/",
+      code: "https://github.com/SeunFashina002/promise-card",
+    },
+    {
+      id: 5,
       src: linkzen,
       name: "LINKZEN (SaaS)",
       description:
@@ -36,22 +55,12 @@ const Project = (props) => {
       code: "",
     },
     {
-      id: 4,
+      id: 6,
       src: promise,
       name: "Promise Me (In Development)",
       description:
         "A digital promise card that allow users to create a list of gift items they desire and share it with their loved ones.",
       live: "https://promisecard.netlify.app/",
-      code: "https://github.com/SeunFashina002/promise-card",
-    },
-
-    {
-      id: 5,
-      src: community,
-      name: "Community chat app",
-      description:
-        "A digital promise card that allow users to create a list of gift items they desire and share it with their loved ones.",
-      live: "https://pontypridd.vercel.app/",
       code: "https://github.com/SeunFashina002/promise-card",
     },
   ];

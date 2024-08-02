@@ -5,16 +5,16 @@ export default function Hero({ mode }) {
     <section
       className={`${mode ? "" : "dark"} intro md:px-12 mt-6 py-4 w-full `}
     >
-      <h1 className="dark:text-white text-3xl font-medium md:text-7xl">
+      <h1 className="dark:text-white text-3xl font-medium md:text-6xl">
         My name is Seun, I am a
-        <span className="text-4xl text-[#0284c7] font-bold md:text-8xl">
+        <span className="text-4xl text-[#0284c7] font-bold md:text-7xl">
           {" "}
-          Software Engineer
+          Software Engineer(BE)
         </span>
       </h1>
       <p className="body dark:text-white">
-        I am a software engineer eager to contribute to team success through
-        hard work, attention to detail, and excellent organizational skills.
+        Highly dedicated Software Engineer with 2+ years of experience
+        specializing in Node.js and other backend technologies.
       </p>
       <div className="btns flex flex-col md:flex-row md:items-center md:justify-center md:gap-2 w-full p-3">
         <a

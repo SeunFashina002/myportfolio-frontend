@@ -6,27 +6,16 @@ export default function About({ mode }) {
           About
         </h2>
         <p>
-          As a software engineer, I have a passion for building robust and
-          scalable backend applications that can handle large amounts of data and
-          traffic. However, I also have experience in frontend development, with
-          the use of stacks like HTML, CSS, and JavaScript, TypeScript as well
-          as modern frontend frameworks like React and NextJs.
-        </p>
-        <br />
-        <p>
-          This sets me apart from other developers in that it has given me a
-          unique perspective on the development process, allowing me to
-          collaborate seamlessly with backend developers to develop API's
-          that meets the full need of the frontend team enabling them build
-          applications that are not only powerful and efficient, but also
-          user-friendly and visually appealing.
-        </p>
-        <br />
-        <p>
-          I am always looking for new challenges and opportunities to expand my
-          knowledge and skills in software engineering. If you are looking for a
-          developer who is passionate about building robust and scalable
-          applications, I would love to hear from you.
+          A highly Dedicated Backend Engineer with 2+ years of experience
+          specializing in Node.js and other backend technologies. Proficient in
+          building robust APIs and scalable systems using MongoDB, PostgreSQL,
+          GraphQL, NestJS and Django. Currently expanding knowledge in
+          SpringBoot, with a passion for deepening expertise in backend
+          development. While skilled in frontend development technologies like
+          React, Tailwind, NextJS and TypeScript, my primary focus is on backend
+          development, aiming to eventually transition into the machine learning
+          space. Dedicated to continuous learning and tackling complex
+          challenges.
         </p>
       </div>
     </section>
