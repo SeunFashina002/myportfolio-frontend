@@ -24,7 +24,7 @@ export default function App() {
       <Hero mode={theme} />
       <About mode={theme} />
       <Project mode={theme} />
-      <OtherProjects mode={theme} />
+      {/* <OtherProjects mode={theme} /> */}
       <Skills mode={theme} />
       <Articles mode={theme} />
       <Contact mode={theme} />

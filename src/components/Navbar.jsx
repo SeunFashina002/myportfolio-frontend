@@ -1,115 +1,154 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-
 import logo from "../assets/icon.png";
 
 const Navbar = (props) => {
-  // USESTATE FOR NAVIGATION
   const [nav, setNav] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [scrolled]);
+
   const handleNav = () => {
     setNav((prev) => !prev);
   };
 
-  //   ARRAY OF LINKS FOR NAVIGATION
   const links = [
-    {
-      id: 1,
-      text: "home",
-    },
-    {
-      id: 2,
-      text: "about",
-    },
-    {
-      id: 3,
-      text: "projects",
-    },
-    {
-      id: 4,
-      text: "skills",
-    },
-    {
-      id: 5,
-      text: "contact",
-    },
+    { id: 1, text: "home" },
+    { id: 2, text: "about" },
+    { id: 3, text: "projects" },
+    { id: 4, text: "skills" },
+    { id: 5, text: "contact" },
   ];
 
   return (
-    <div className={`md:px-12 ${props.mode ? "" : "dark"}`}>
-      <nav className="flex justify-between px-6 items-center mx-auto w-full h-20 text-black dark:text-white">
-        <div className="flex gap-3">
-          <div
-            onClick={handleNav}
-            className="flex md:hidden items-center cursor-pointer"
+    <div
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        props.mode
+          ? "bg-transparent backdrop-blur-md shadow-lg"
+          : "bg-[#111827]"
+      } ${!props.mode ? "dark" : ""}`}
+    >
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo and Mobile Menu Button */}
+          <div className="flex items-center gap-3">
+            <button
+              onClick={handleNav}
+              className="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              aria-label="Toggle menu"
+            >
+              {nav ? (
+                <FaTimes
+                  size={20}
+                  className="text-gray-600 dark:text-gray-300"
+                />
+              ) : (
+                <FaBars
+                  size={20}
+                  className="text-gray-600 dark:text-gray-300"
+                />
+              )}
+            </button>
+
+            <Link to="home" className="flex items-center gap-3 cursor-pointer">
+              <img
+                src={logo}
+                alt="logo"
+                width={30}
+                className="hidden md:block rounded-md"
+              />
+              <h1 className="font-medium text-2xl">
+                <span className="text-gray-900 dark:text-white">Se</span>
+                <span className="text-[#0284c7]">un</span>
+              </h1>
+            </Link>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-1">
+            {links.map(({ id, text }) => (
+              <Link
+                key={id}
+                to={text}
+                smooth
+                duration={200}
+                className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-[#0284c7] dark:hover:text-[#0284c7] transition-colors relative group"
+              >
+                {text}
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#0284c7] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+              </Link>
+            ))}
+          </div>
+
+          {/* Theme Toggle */}
+          <button
+            onClick={props.toggle}
+            className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-label="Toggle theme"
           >
-            {nav ? (
-              <FaTimes size={20} className="z-50 " />
+            {props.mode ? (
+              <FaMoon size={20} className="text-gray-600 dark:text-gray-300" />
             ) : (
-              <FaBars size={20} />
+              <FaSun size={20} className="text-gray-600 dark:text-gray-300" />
             )}
-          </div>
-
-          <div className="flex cursor-pointer gap-3">
-            <img
-              src={logo}
-              alt="logo"
-              width={30}
-              className="hidden md:flex rounded-md"
-            />
-            <h1 className=" font-medium text-3xl ">
-              Se
-              <span className="text-[#0284c7] bg-clip-text">
-                un
-              </span>
-            </h1>
-          </div>
-        </div>
-
-        <div className="flex justify-between">
-          <ul className="hidden md:flex">
-            {links.map(({ id, text }) => (
-              <li
-                key={id}
-                className=" px-4 capitalize duration-500 hover:underline hover:underline-offset-8 hover:text-teal-600 hover:decoration-4 cursor-pointer font-medium"
-              >
-                <Link to={text} smooth duration={200}>
-                  {text}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div
-          className="flex items-center cursor-pointer hover:rotate-[360deg] duration-300"
-          onClick={props.toggle}
-        >
-          {props.mode ? <FaMoon size={20} /> : <FaSun size={20} />}
-        </div>
-        {/* MOBILE NAVIGATION */}
-        <div
-          className={
-            nav
-              ? "fixed z-10 left-0 top-0 w-full h-full border-r border-r-black bg-[#f1f5f9] dark:bg-[#111827] ease-in-out duration-700 "
-              : "fixed left-[-100%]"
-          }
-        >
-          <ul className="text-black dark:text-white mt-12 flex flex-col items-center">
-            {links.map(({ id, text }) => (
-              <li
-                key={id}
-                className=" p-4 uppercase duration-500 hover:underline hover:underline-offset-8 hover:text-teal-600 hover:decoration-4 cursor-pointer font-medium"
-                onClick={handleNav}
-              >
-                <Link onClick={handleNav} to={text} smooth duration={200}>
-                  {text}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          </button>
         </div>
       </nav>
+
+      {/* Mobile Navigation */}
+      <div
+        className={`fixed inset-0 z-40 transform transition-transform duration-300 ease-in-out ${
+          nav ? "translate-x-0" : "-translate-x-full"
+        } md:hidden`}
+      >
+        <div
+          className="fixed inset-0 bg-black/20 backdrop-blur-sm"
+          onClick={handleNav}
+        />
+        <div className="fixed inset-y-0 left-0 w-64 bg-white dark:bg-gray-900 shadow-xl">
+          <div className="flex flex-col h-full">
+            <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
+                Menu
+              </h2>
+              <button
+                onClick={handleNav}
+                className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+              >
+                <FaTimes
+                  size={20}
+                  className="text-gray-600 dark:text-gray-300"
+                />
+              </button>
+            </div>
+            <nav className="flex-1 px-4 py-6 space-y-1">
+              {links.map(({ id, text }) => (
+                <Link
+                  key={id}
+                  to={text}
+                  smooth
+                  duration={200}
+                  onClick={handleNav}
+                  className="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-[#0284c7] dark:hover:text-[#0284c7] hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                >
+                  {text}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
