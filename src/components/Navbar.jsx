@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/icon.png";
 
 const Navbar = (props) => {
@@ -24,11 +24,11 @@ const Navbar = (props) => {
   };
 
   const links = [
-    { id: 1, text: "home" },
-    { id: 2, text: "about" },
-    { id: 3, text: "projects" },
-    { id: 4, text: "skills" },
-    { id: 5, text: "contact" },
+    { id: 1, text: "home", to: "home" },
+    { id: 2, text: "about", to: "about" },
+    { id: 3, text: "projects", to: "projects" },
+    { id: 4, text: "skills", to: "skills" },
+    { id: 5, text: "contact", to: "contact" },
   ];
 
   return (
@@ -61,7 +61,12 @@ const Navbar = (props) => {
               )}
             </button>
 
-            <Link to="home" className="flex items-center gap-3 cursor-pointer">
+            <ScrollLink
+              to="home"
+              smooth={true}
+              duration={500}
+              className="flex items-center gap-3 cursor-pointer"
+            >
               <img
                 src={logo}
                 alt="logo"
@@ -72,22 +77,22 @@ const Navbar = (props) => {
                 <span className="text-gray-900 dark:text-white">Se</span>
                 <span className="text-[#0284c7]">un</span>
               </h1>
-            </Link>
+            </ScrollLink>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
-            {links.map(({ id, text }) => (
-              <Link
+            {links.map(({ id, text, to }) => (
+              <ScrollLink
                 key={id}
-                to={text}
+                to={to}
                 smooth
-                duration={200}
-                className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-[#0284c7] dark:hover:text-[#0284c7] transition-colors relative group"
+                duration={500}
+                className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-[#0284c7] dark:hover:text-[#0284c7] transition-colors relative group cursor-pointer"
               >
                 {text}
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#0284c7] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-              </Link>
+              </ScrollLink>
             ))}
           </div>
 
@@ -133,17 +138,17 @@ const Navbar = (props) => {
               </button>
             </div>
             <nav className="flex-1 px-4 py-6 space-y-1">
-              {links.map(({ id, text }) => (
-                <Link
+              {links.map(({ id, text, to }) => (
+                <ScrollLink
                   key={id}
-                  to={text}
+                  to={to}
                   smooth
-                  duration={200}
+                  duration={500}
                   onClick={handleNav}
-                  className="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-[#0284c7] dark:hover:text-[#0284c7] hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                  className="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-[#0284c7] dark:hover:text-[#0284c7] hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors cursor-pointer"
                 >
                   {text}
-                </Link>
+                </ScrollLink>
               ))}
             </nav>
           </div>

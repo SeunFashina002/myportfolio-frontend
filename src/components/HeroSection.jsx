@@ -48,6 +48,7 @@ const techStack = [
 export default function Hero({ mode }) {
   return (
     <section
+      id="home"
       className={`${mode ? "" : "dark"} intro min-h-screen flex items-center relative overflow-hidden`}
     >
       {/* Background decoration */}

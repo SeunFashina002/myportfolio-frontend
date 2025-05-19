@@ -58,7 +58,7 @@ const Project = (props) => {
       description:
         "This chat app was designed to foster effective communication and accountability among a group of related people.",
       live: "https://pontypridd.vercel.app/",
-      code: "https://github.com/SeunFashina002/promise-card",
+      code: "https://github.com/SeunFashina002/community-chatapp-using-stream",
       tags: ["Real-time", "Communication", "Web App"],
       role: "Full Stack Developer",
       status: "Completed",
